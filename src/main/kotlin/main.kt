@@ -1,8 +1,8 @@
 fun main(args: Array<String>) {
-    print(helloESGI())
+    helloESGI()
 }
 
-fun helloESGI() : String {
+fun helloESGI() : Unit {
     var res = "Hello ESGI!"
-    return res
+    print(res)
 }
