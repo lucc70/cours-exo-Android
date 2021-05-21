@@ -1,8 +1,8 @@
 fun main(args: Array<String>) {
-    helloESGI()
+    print(multiFive(1))
 }
 
-fun helloESGI() : Unit {
-    var res = "Hello ESGI!"
-    print(res)
+fun multiFive(number: Int) : Int {
+    var multi = 5
+    return number * 5
 }
