@@ -5,15 +5,16 @@ fun main(args: Array<String>) {
     // autre manière plus courte
     print(multiFive(aMultiple))*/
 
-
-    fun useFoo() = listOf(
-        foo("a"),
-        foo("b", number = 1),
-        foo("c", toUpperCase = true),
-        foo(name = "d", number = 2, toUpperCase = true)
-    )
+    var num = 3
+    print("le factoriel de " + num + " est : " + factorielle(num))
 }
 
-// i lfaut rajouter des valeur par defaut au cas ou on decide de ne pas en entrer plus tard
-fun foo(name: String, number: Int = 0, toUpperCase: Boolean = true) =
-    (if (toUpperCase) name.toUpperCase() else name) + number
+//Implémenter l'algorithme permettant de calculer la factorielle d'un entier.
+fun factorielle (n : Int) : Int {
+    if (n>1) {
+        return n * factorielle(n-1)
+    } else {
+        return 1
+    }
+    return 1
+}
