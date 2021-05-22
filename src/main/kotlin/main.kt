@@ -1,6 +1,9 @@
 fun main(args: Array<String>) {
 
-    // utilisation possible du comparateur == plus besoin de la fun equals quand c'est une data class
+    // premier weather avec le constructor par defaut implictement créé
+    Weather(13.21f, " Bordeaux").display()
 
+    // deuxieme weather avec le constructeur qui prend un obj weather
+    Weather(Weather(30f," Rio")).display()
 }
 
