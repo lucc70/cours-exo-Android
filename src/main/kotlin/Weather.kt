@@ -6,4 +6,9 @@ class Weather(var temperature: Float?, var lieu : String?) {
     fun display() {
         println(lieu + " " + temperature)
     }
+
+    operator fun get(lieu: String?): String {
+        return "lieu : " + this.lieu
+    }
+
 }

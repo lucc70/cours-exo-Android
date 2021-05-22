@@ -5,5 +5,7 @@ fun main(args: Array<String>) {
 
     // deuxieme weather avec le constructeur qui prend un obj weather
     Weather(Weather(30f," Rio")).display()
+
+    Weather(5f, " Lyon").get("Lyon")
 }
 
