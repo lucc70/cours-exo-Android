@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
 
-    // utilisation de la fun equals pour comparer 2 users
-    println("sont ils égaux ? " + User("smith","toto").equals(User("smith","toto")))
+    // utilisation possible du comparateur == plus besoin de la fun equals quand c'est une data class
+    println("sont ils égaux ? " + (User("smith", "toto") == User("smith", "toto")))
     User("titi","tata").display()
 }
 
