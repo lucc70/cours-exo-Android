@@ -7,7 +7,8 @@ class Weather(var temperature: Float?, var lieu : String?) {
         println(lieu + " " + temperature)
     }
 
-    operator fun get(lieu: String?): String {
+    fun get(lieu: String?) : String{
+        println( "lieu :");
         return "lieu : " + this.lieu
     }
 
@@ -15,6 +16,11 @@ class Weather(var temperature: Float?, var lieu : String?) {
         return "Temperature de $lieu : $temperature "
     }
 
-
+    fun isCold (): Boolean {
+        if (this.temperature!! < 0) {
+            return true;
+        }
+        return false;
+    }
 
 }

@@ -7,7 +7,13 @@ fun main(args: Array<String>) {
     //Weather(Weather(30f," Rio")).display()
 
     //Weather(5f, " Lyon").get("Lyon")
-    println(Weather(5f, " Lyon").toString())
+    //println(Weather(5f, " Lyon").toString())
+
+    //Weather(-5f, " Lyon")
+
+    var weather1 = Weather(temperature = -10f,lieu = "paris")
+    println("il fait froid : " + weather1.isCold())
+
 
 }
 
