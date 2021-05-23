@@ -11,4 +11,10 @@ class Weather(var temperature: Float?, var lieu : String?) {
         return "lieu : " + this.lieu
     }
 
+    override fun toString(): String {
+        return "Temperature de $lieu : $temperature "
+    }
+
+
+
 }
