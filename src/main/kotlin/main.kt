@@ -31,6 +31,17 @@ fun main(args: Array<String>) {
     val map = mapOf("clé" to "valeur")*/
     //println(map[])
 
+    var a = 0
 
+    var immutableList = listOf<Int>(1,2,3,4,5,6,7,8,9,10).iterator()
+    immutableList.forEach {
+        //println("the element $it")
+        a = a + it
+    }
+    println("somme de list  $a")
+
+    
 }
+
+
 
