@@ -14,6 +14,8 @@ fun main(args: Array<String>) {
     var weather1 = Weather(temperature = 27f,lieu = "paris")
     //println("fait-il froid ? : \n - " + weather1.isCold())
     println("fait-il Chaud ? : \n - " + weather1.isHot())
+    var user1 = User("DOE","Smith")
+    user1.hello()
 
 }
 

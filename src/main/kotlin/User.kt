@@ -6,6 +6,10 @@ data class User(private var nom: String?, private var prenom: String?) {
     open fun display() {
         println(nom + " " + prenom)
     }
+
+     fun hello() {
+        println("hello world");
+    }
     // on overrive la fun esquals qui renvoit
     /*override fun equals(other: Any?): Boolean {
         return (other as User).nom == nom && (other as User).prenom == prenom
